@@ -23,7 +23,7 @@ y debemos distinguir si viene de primeras o de segundas y debemos preguntar en l
 
     /**
      * isset — Determina si una variable está definida y no es null
-     *try
+     *
      * $ _GET es una variable súper global de PHP que se utiliza para recopilar datos de formularios
      * después de enviar un formulario HTML con method = "get". $ _GET también puede recopilar datos enviados en la URL.
      */
