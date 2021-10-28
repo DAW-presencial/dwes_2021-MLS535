@@ -11,7 +11,7 @@ function ordenar($array) {
     return $array;
 }
  
-$array=array(10,8,7,5,1,2,3,4);
+$array=array(10,8,7,5,1);
 
-
+echo "hola";
 ?>
