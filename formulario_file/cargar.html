@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="main">
+  <h1>Enviar un Archivo</h1>
+  <br>
+  <form enctype="multipart/form-data" action="upload.php" method="POST">
+    <input type="hidden" name="MAX_FILE_SIZE" value="512000" />
+    <p> Enviar mi archivo: <input name="subir_archivo" type="file" /></p>
+    <p> <input type="submit" value="Enviar Archivo" /></p>
+  </form>
+</div>
+</body>
+</html>

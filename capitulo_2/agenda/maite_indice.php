@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <!-- Creamos un formulario que lo envia al servidor y vuelve a hacer lo mismo
+    <!-- Creamos un php-login-script-level-1 que lo envia al servidor y vuelve a hacer lo mismo
 y debemos distinguir si viene de primeras o de segundas y debemos preguntar en la url si llega el submit-->
     <?php
 
@@ -25,7 +25,7 @@ y debemos distinguir si viene de primeras o de segundas y debemos preguntar en l
      * isset — Determina si una variable está definida y no es null
      *
      * $ _GET es una variable súper global de PHP que se utiliza para recopilar datos de formularios
-     * después de enviar un formulario HTML con method = "get". $ _GET también puede recopilar datos enviados en la URL.
+     * después de enviar un php-login-script-level-1 HTML con method = "get". $ _GET también puede recopilar datos enviados en la URL.
      */
     if (isset($_GET['usuarios'])) {
 
@@ -39,7 +39,7 @@ y debemos distinguir si viene de primeras o de segundas y debemos preguntar en l
         $nombre_agenda =  filter_input(INPUT_GET, 'nombre'); //$_GET['nombre'];
         $telefono_agenda = filter_input(INPUT_GET, 'telefono'); //$_GET['telefono'];
         if (empty($nombre_agenda)) {
-            echo '<h2 style="color:red";><b>Por favor introduce un nombre y un telefono en el formulario</b></h2>';
+            echo '<h2 style="color:red";><b>Por favor introduce un nombre y un telefono en el php-login-script-level-1</b></h2>';
         }
         //empty() determina si una variable está vacía
         elseif (empty($telefono_agenda)) {

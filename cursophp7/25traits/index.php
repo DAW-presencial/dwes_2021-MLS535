@@ -11,7 +11,7 @@ trait Session{
     }
 }
 
-class User{
+class Users{
     //el trait pasa a ser como una clase. Simular la herencia multiple en php
     use Cart, Session;
 
@@ -20,7 +20,7 @@ class User{
     }
 }
 
-$user = new User();
+$user = new Users();
 
 var_dump($user);
 echo "\n";
