@@ -8,9 +8,10 @@
 <div class="main">
   <h1>Enviar un Archivo</h1>
   <br>
-  <form enctype="multipart/form-data" action="upload.php" method="POST">
+  <form enctype="multipart/form-data" action="multiple_file.php" method="POST">
     <input type="hidden" name="MAX_FILE_SIZE" value="512000" />
-    <p> Enviar mi archivo: <input name="subir_archivo" type="file" /></p>
+    <p> Enviar mi archivo: <input name="upload[]" type="file" multiple="multiple" /></p>
+
     <p> <input type="submit" value="Enviar Archivo" /></p>
   </form>
 </div>
