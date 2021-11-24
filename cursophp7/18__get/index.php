@@ -1,7 +1,7 @@
 <?php
 //Metodo magico get nos permite acceder a propiedades que están en un ambito privado o protegidas
 
-class Producto{
+class kProducto{
     protected $nombre;
     protected $qty;
 
