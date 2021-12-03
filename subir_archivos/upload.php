@@ -1,4 +1,6 @@
+
 <?php
+
 //Solo un archivo
 $directorio = "./archivos/";
 //__DIR__
