@@ -1,37 +1,10 @@
+
+<dl>
+    <dt>First name</dt><dd><?php echo $_POST["name"]?></dd>
+    <dt>Last name</dt><dd><?php echo $_POST["apellido"]?></dd>
+    <dt>Last name</dt><dd><?php echo $_POST["date"]?></dd>
+</dl>
 <?php
-error_reporting(0);
-
-
-session_start();
-
-if (isset($_COOKIE["usuario"])) {
-    $_SESSION["nombre"] = $_COOKIE["usuario"];
-    header("location: users-layout.php");
-} else {
-    if (isset($_POST["submit"])) {
-        $name = filter_input(INPUT_POST, "name");
-        $apellido = filter_input(INPUT_POST, "apellido");
-        $fecha = filter_input(INPUT_POST, "date");
-
-        if ($name !== "") {
-            if (isset($_POST["submit"])) {
-                setcookie("usuario", $name, time() + 80000);
-                $_SESSION["nombre"] = $name;
-                header("location: users-layout.php");
-            } else {
-                session_start();
-                $_SESSION["nombre"] = $name;
-                header("location: users-layout.php");
-            }
-
-        } else {
-            displayFormulario();
-        }
-
-    } else {
-        displayFormulario();
-    }
-}
 
 //Solo un archivo
 $directorio = "./archivos/";
@@ -59,23 +32,4 @@ if($_FILES['file2']['name']) {
 } else {
     echo 'No se recibió archivo 2';
 }
-function displayFormulario()
-{
-    ?>
-    <form action="" method="post">
-        Nombre: <input name="name" type="text" placeholder="username..."><br>
-        Nombre: <input name="apellido" type="text" placeholder="apellido..."><br>
-        Fecha: <input name="date" type="date"><br>
-        Selecciona el archivo 1:
-        <br>
-        <input type="file" name="file1">
-        </p>
-        <p>
-            Selecciona el archivo 2:
-            <br>
-            <input type="file" name="file2">
-        </p>
-        <input name="submit" type="submit" value="Submit">
-    </form>
-    <?php
-}
+?>

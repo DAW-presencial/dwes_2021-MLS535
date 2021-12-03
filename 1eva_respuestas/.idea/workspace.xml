@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cd4357f-0ab0-4f6f-ab8a-55175896919d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ejercicio1/Padre.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/formulario/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/formulario/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/formulario/users-layout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../subir_archivos/indice.html" beforeDir="false" afterPath="$PROJECT_DIR$/../subir_archivos/indice.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../subir_archivos/upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/../subir_archivos/upload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulario/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulario/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulario/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/formulario/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulario/users-layout.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../dwes/cap5_phpOO" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../subir_archivos" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -52,7 +49,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638543277932</updated>
-      <workItem from="1638543279199" duration="2674000" />
+      <workItem from="1638543279199" duration="4175000" />
     </task>
     <servers />
   </component>
