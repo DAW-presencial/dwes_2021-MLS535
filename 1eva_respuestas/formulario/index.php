@@ -1,9 +1,3 @@
-
-<dl>
-    <dt>First name</dt><dd><?php echo $_POST["name"]?></dd>
-    <dt>Last name</dt><dd><?php echo $_POST["apellido"]?></dd>
-    <dt>Last name</dt><dd><?php echo $_POST["date"]?></dd>
-</dl>
 <?php
 
 //Solo un archivo
@@ -33,3 +27,9 @@ if($_FILES['file2']['name']) {
     echo 'No se recibió archivo 2';
 }
 ?>
+<dl>
+    <dt>First name</dt><dd><?php echo $_POST["name"]?></dd>
+    <dt>Last name</dt><dd><?php echo $_POST["apellido"]?></dd>
+    <dt>Last name</dt><dd><?php echo $_POST["date"]?></dd>
+   
+</dl>
