@@ -15,6 +15,7 @@ for( $i=0 ; $i < $total ; $i++ ) {
         //Setup our new file path
         $newFilePath = "./archivos/" . $_FILES['upload']['name'][$i];
             echo "se ha añadido el archivo";
+            var_dump($newFilePath);
         //Upload the file into the temp dir
         if(move_uploaded_file($tmpFilePath, $newFilePath)) {
 
