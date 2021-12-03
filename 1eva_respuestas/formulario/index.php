@@ -33,5 +33,4 @@ if($_FILES['file2']['name']) {
     <dt>First name</dt><dd><?php echo $_POST["name"]?></dd>
     <dt>Last name</dt><dd><?php echo $_POST["apellido"]?></dd>
     <dt>Last name</dt><dd><?php echo $_POST["date"]?></dd>
-    <dt><?php filesize($subir_archivo) ?></dt>
 </dl>
