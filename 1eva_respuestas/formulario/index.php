@@ -3,7 +3,7 @@
 <?php
 
 //Solo un archivo
-$directorio = "./archivos/";
+$directorio = "/archivos";
 //__DIR__
 $subir_archivo = $directorio.basename($_FILES['file1']['name']) ;
 $subir_archivo1 = $directorio.basename($_FILES['file2']['name']);
