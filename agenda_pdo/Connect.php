@@ -3,10 +3,11 @@
 //https://www.allphptricks.com/php-crud-pdo-prepared-statements/
 class Connect
 {
-private $db_host = 'g1.ifc33b.cifpfbmoll.eu';
+private $db_host = 'mladaria.ifc33b.cifpfbmoll.eu';
 private	$db_name = 'agenda_mladaria';
 private $db_user = 'mladaria_usr';
 private	$db_pass = 'abc123.';
+private $port = "5432";
 
 private $dbh;
 private $error;
@@ -15,7 +16,7 @@ private $stmt;
 public function __construct()
 {
 //Set DSN (Data Source Name)
-$dsn = 'pgsql:host='.$this->db_host.';dbname='.$this->db_name;
+$dsn = 'pgsql:host='.$this->db_host.';port='.$this->port.';dbname='.$this->db_name;
 $db_options = array(
 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
 );
@@ -25,6 +26,7 @@ $this->dbh = new PDO($dsn, $this->db_user, $this->db_pass, $db_options);
 }
 catch(PDOException $e)
 {
+    echo "Ocurrió un error con la base de datos <br>";
 echo $this->error = $e->getMessage();
 }
 }
