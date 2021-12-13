@@ -8,10 +8,22 @@ class Database{
     function __construct(){
         $this->connect_db();
     }
-    public function connect_db(){
-        $this->con = mysqli_connect($this->dbhost, $this->dbuser, $this->dbpass, $this->dbname);
-        if(mysqli_connect_error()){
-            die("Conexión a la base de datos falló " . mysqli_connect_error() . mysqli_connect_errno());
+//    public function connect_db(){
+//        $this->con = mysqli_connect($this->dbhost, $this->dbuser, $this->dbpass, $this->dbname);
+//        if(mysqli_connect_error()){
+//            die("Conexión a la base de datos falló " . mysqli_connect_error() . mysqli_connect_errno());
+//        }
+//    }
+    public static function connect_db()
+    {
+        if (null !== self::$db) {
+            return self::$db;
+        }
+        try {
+            return self::$db = new PDO(self::GESTOR_BASE_DATOS . ":host=". self::RUTA_SERVIDOR . ";port=" . self::PUERTO . ";dbname=" . self::NOMBRE_BASE_DATOS, self::USUARIO, self::CONTRA);
+        } catch (PDOException $PDOExceptionConnectionBaseDatos) {
+            echo "Hubo un error al conectarse ha la base de datos " . $PDOExceptionConnectionBaseDatos->getMessage();
+            return self::$db;
         }
     }
     public function sanitize($var){
