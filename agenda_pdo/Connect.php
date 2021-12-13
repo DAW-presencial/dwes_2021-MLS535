@@ -3,7 +3,7 @@
 //https://www.allphptricks.com/php-crud-pdo-prepared-statements/
 class Connect
 {
-private $db_host = '127.0.0.1';
+private $db_host = 'g1.ifc33b.cifpfbmoll.eu';
 private	$db_name = 'agenda_mladaria';
 private $db_user = 'mladaria_usr';
 private	$db_pass = 'abc123.';
