@@ -5,7 +5,7 @@ require_once('Connect.php');
 $db = new Connect();
 
 // Insert Query (Method 1 - named placeholders)
-$db->query("INSERT INTO `agenda` (`nombres`,`apellidos` ,`telefono`) VALUES (:nombres, :telefono)");
+$db->query("INSERT INTO `agenda` (`nombres`,`apellidos` ,`telefono`) VALUES (:nombres, :apellidos,:telefono)");
 $db->bind(":nombres", 'Audi');
 $db->bind(":apellidos", 'MCKENCY');
 $db->bind(":telefono", '1909');
