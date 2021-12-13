@@ -5,8 +5,8 @@ class Connect
 {
 private $db_host = '127.0.0.1';
 private	$db_name = 'agenda_mladaria';
-private $db_user = 'root';
-private	$db_pass = '';
+private $db_user = 'mladaria_usr';
+private	$db_pass = 'abc123.';
 
 private $dbh;
 private $error;
