@@ -1,7 +1,7 @@
 <?php
 class db{
     private $db_host = 'localhost';
-    private	$db_name = 'agenda_prueba';
+    private	$db_name = 'agenda_mladaria';
     private $db_user = 'root';
     private	$db_pass = '';
    // private $port = "5432";
@@ -16,7 +16,7 @@ class db{
 //        $database_password = '';
 //        $pdo_conn = new PDO( 'mysql:host=localhost;dbname=agenda_pruebas', $database_username, $database_password );
         try {
-            $baseDeDatos = new PDO('mysql:host=' . $this->db_host .';dbname=' . $this->db_name, $this->db_user, $this->db_pass);
+            $baseDeDatos = new PDO('pgsql:host=' . $this->db_host .';dbname=' . $this->db_name, $this->db_user, $this->db_pass);
             $baseDeDatos->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $baseDeDatos;
 
