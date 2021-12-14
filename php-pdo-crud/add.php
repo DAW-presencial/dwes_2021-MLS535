@@ -2,7 +2,7 @@
 include("db.php");
 $usuarios= new db();
 if(!empty($_POST["add_record"])) {
-	$sql = "INSERT INTO clientes ( nombres, apellidos, telefono ) VALUES ( :nombres, :apellidos, :telefono )";
+	$sql = "INSERT INTO agenda ( nombres, apellidos, telefono ) VALUES ( :nombres, :apellidos, :telefono )";
 
     $pdo_statement = $usuarios->connect_db()->prepare( $sql );
 		

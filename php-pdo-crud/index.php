@@ -16,7 +16,7 @@ body{width:615px;font-family:arial;letter-spacing:1px;line-height:20px;}
 </head>
 <body>
 <?php	
-	$pdo_statement = $usuarios->connect_db()->prepare("SELECT * FROM clientes ORDER BY id DESC");
+	$pdo_statement = $usuarios->connect_db()->prepare("SELECT * FROM agenda ORDER BY id DESC");
 	$pdo_statement->execute();
 	$result = $pdo_statement->fetchAll();
 ?>

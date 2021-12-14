@@ -2,13 +2,13 @@
 include("db.php");
 $usuarios= new db();
 if(!empty($_POST["save_record"])) {
-	$pdo_statement=$usuarios->connect_db()->prepare("update clientes set nombres='" . $_POST[ 'nombres' ] . "', apellidos='" . $_POST[ 'apellidos' ]. "', telefono='" . $_POST[ 'telefono' ]. "' where id=" . $_GET["id"]);
+	$pdo_statement=$usuarios->connect_db()->prepare("update agenda set nombres='" . $_POST[ 'nombres' ] . "', apellidos='" . $_POST[ 'apellidos' ]. "', telefono='" . $_POST[ 'telefono' ]. "' where id=" . $_GET["id"]);
 	$result = $pdo_statement->execute();
 	if($result) {
 		header('location:index.php');
 	}
 }
-$pdo_statement = $usuarios->connect_db()->prepare("SELECT * FROM clientes where id=" . $_GET["id"]);
+$pdo_statement = $usuarios->connect_db()->prepare("SELECT * FROM agenda where id=" . $_GET["id"]);
 $pdo_statement->execute();
 $result = $pdo_statement->fetchAll();
 ?>
