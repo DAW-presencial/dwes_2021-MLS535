@@ -1,5 +1,5 @@
 <?php
-include("db.php");
+include("config/db.php");
 $usuarios= new db();
 if(!empty($_POST["save_record"])) {
 	$pdo_statement=$usuarios->connect_db()->prepare("update agenda set nombres='" . $_POST[ 'nombres' ] . "', apellidos='" . $_POST[ 'apellidos' ]. "', telefono='" . $_POST[ 'telefono' ]. "' where id=" . $_GET["id"]);

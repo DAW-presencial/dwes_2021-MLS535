@@ -1,5 +1,5 @@
 <?php
-include("db.php");
+include("config/db.php");
 $usuarios= new db();
 if(!empty($_POST["add_record"])) {
 	$sql = "INSERT INTO agenda ( nombres, apellidos, telefono ) VALUES ( :nombres, :apellidos, :telefono )";
