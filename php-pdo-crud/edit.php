@@ -14,10 +14,10 @@ $result = $pdo_statement->fetchAll();
 ?>
 <html>
 <head>
-<title>PHP PDO CRUD - Edit Record</title>
+<title>Editar contacto</title>
 <style>
 body{width:615px;font-family:arial;letter-spacing:1px;line-height:20px;}
-.button_link {color:#FFF;text-decoration:none; background-color:#428a8e;padding:10px;}
+.button_link {color:#FFF;text-decoration:none; background-color:black;padding:10px;}
 .frm-add {border: #c3bebe 1px solid;
     padding: 30px;}
 .demo-form-heading {margin-top:0px;font-weight: 500;}	
@@ -27,9 +27,9 @@ body{width:615px;font-family:arial;letter-spacing:1px;line-height:20px;}
 </style>
 </head>
 <body>
-<div style="margin:20px 0px;text-align:right;"><a href="index.php" class="button_link">Back to List</a></div>
+<div style="margin:20px 0px;text-align:right;"><a href="index.php" class="button_link">Volver a la lista</a></div>
 <div class="frm-add">
-<h1 class="demo-form-heading">Edit Record</h1>
+<h1 class="demo-form-heading">Editar contacto</h1>
 <form name="frmAdd" action="" method="POST">
   <div class="demo-form-row">
 	  <label>Nombre: </label><br>
@@ -44,7 +44,7 @@ body{width:615px;font-family:arial;letter-spacing:1px;line-height:20px;}
 	  <input type="number" name="telefono" class="demo-form-field" value="<?php echo $result[0]['telefono']; ?>" required />
   </div>
   <div class="demo-form-row">
-	  <input name="save_record" type="submit" value="Save" class="demo-form-submit">
+	  <input name="save_record" type="submit" value="Guardar" class="demo-form-submit">
   </div>
   </form>
 </div>

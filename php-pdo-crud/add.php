@@ -14,10 +14,10 @@ if(!empty($_POST["add_record"])) {
 ?>
 <html>
 <head>
-<title>PHP PDO CRUD - Add New Record</title>
+<title>Añadir un nuevo usuario</title>
 <style>
 body{width:615px;font-family:arial;letter-spacing:1px;line-height:20px;}
-.button_link {color:#FFF;text-decoration:none; background-color:#428a8e;padding:10px;}
+.button_link {color:#FFF;text-decoration:none; background-color:black;padding:10px;}
 .frm-add {border: #c3bebe 1px solid;
     padding: 30px;}
 .demo-form-heading {margin-top:0px;font-weight: 500;}	
@@ -27,9 +27,9 @@ body{width:615px;font-family:arial;letter-spacing:1px;line-height:20px;}
 </style>
 </head>
 <body>
-<div style="margin:20px 0px;text-align:right;"><a href="index.php" class="button_link">Back to List</a></div>
+<div style="margin:20px 0px;text-align:right;"><a href="index.php" class="button_link">Volver a la lista</a></div>
 <div class="frm-add">
-<h1 class="demo-form-heading">Add New Record</h1>
+<h1 class="demo-form-heading">Añadir un nuevo usuario</h1>
 <form name="frmAdd" action="" method="POST">
   <div class="demo-form-row">
 	  <label>Nombre: </label><br>
@@ -44,7 +44,7 @@ body{width:615px;font-family:arial;letter-spacing:1px;line-height:20px;}
 	  <input type="number" name="telefono" class="demo-form-field" required />
   </div>
   <div class="demo-form-row">
-	  <input name="add_record" type="submit" value="Add" class="demo-form-submit">
+	  <input name="add_record" type="submit" value="Añadir" class="demo-form-submit">
   </div>
   </form>
 </div> 
