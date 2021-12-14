@@ -2,8 +2,8 @@
 class db{
     private $db_host = 'localhost';
     private	$db_name = 'agenda_mladaria';
-    private $db_user = 'root';
-    private	$db_pass = '';
+    private $db_user = 'mladaria_usr';
+    private	$db_pass = 'abc123.';
    // private $port = "5432";
 
   public function __construct()
