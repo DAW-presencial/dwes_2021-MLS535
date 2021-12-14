@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/agenda_pdo.iml" filepath="$PROJECT_DIR$/.idea/agenda_pdo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/php-pdo-crud.iml" filepath="$PROJECT_DIR$/.idea/php-pdo-crud.iml" />
     </modules>
   </component>
 </project>
