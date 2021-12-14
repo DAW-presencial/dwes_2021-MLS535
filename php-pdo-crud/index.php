@@ -39,7 +39,7 @@ body{width:615px;font-family:arial;letter-spacing:1px;line-height:20px;}
 		<td><?php echo $row["nombres"]; ?></td>
 		<td><?php echo $row["apellidos"]; ?></td>
 		<td><?php echo $row["telefono"]; ?></td>
-		<td><a class="ajax-action-links" href='edit.php?id=<?php echo $row['id']; ?>'><img src="crud-icon/edit.png" title="Edit" /></a> <a class="ajax-action-links" href='delete.php?id=<?php echo $row['id']; ?>'><img src="crud-icon/delete.png" title="Delete" /></a></td>
+		<td><a class="ajax-action-links" href='edit.php?id=<?php echo $row['id']; ?>'>Editar<img src="crud-icon/edit.png" title="Edit" /></a> Eliminar<a class="ajax-action-links" href='delete.php?id=<?php echo $row['id']; ?>'><img src="crud-icon/delete.png" title="Delete" /></a></td>
 	  </tr>
     <?php
 		}
